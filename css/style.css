@@ -1,0 +1,116 @@
+* { padding: 0; margin: 0; }
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+}
+body{
+    background-color: #202124;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 40%;
+    border-radius: 3vw;
+    display: flex;
+    margin:0 auto; 
+    flex-direction: row;
+    padding: 5px;
+    background-color: rgb(0, 0, 0,0.4);
+    color: #e8eaed;
+    
+}
+.center, .left, .right{
+    position: relative;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.left, .right{
+    width: 39%;
+    display:flex;
+    flex-direction: column;
+}
+.right{
+    padding-left: 1%;
+}
+.left{
+    padding-right: 1%;
+}
+.genButton{
+    width: 100%;
+    height: 100%;
+    
+}
+#genButton{
+    font-size: 1vw;
+    width: 100%;
+    height: 12%;
+    border-radius: 4vw;
+    border: 0.3vw solid #212670;
+    color: #e8eaed;
+    background-color: #222ba5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#genButton:hover{
+    border: 0.3vw solid rgb(26, 30, 90);
+    color: #e8eaed;
+    background-color: #1d28bb;
+}
+#genButton:active{
+    border: 0.3vw solid rgb(26, 30, 90);
+    color: #e8eaed;
+    background-color: #1f2579;
+}
+.name, .score{
+    font-size: 1.3vw;
+    padding-top: 4%;
+    width: 100%;
+    text-align: center;
+    height: 8%;
+
+}
+.score{
+    width: 60%;
+    background-color: #303134;
+    border-radius: 2vw;
+}
+.roll{
+    position: relative;
+    padding: 5px;
+    overflow:hidden;
+    height: 70%;
+}
+#roll1Image{
+    height: 100%;
+    width: 100%;
+}
+#roll2Image{
+    height: 100%;
+    width: 100%;
+}
+p{
+    font-size:2vw;
+    width:2.3vw;
+    background-color:#33394b ;
+    box-shadow:0 0 0 1.5vw #33394b, 0 0 0 1.7vw #dee039;
+    text-align: center;
+    border-radius:50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.currentTry{
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 5vw;
+}
