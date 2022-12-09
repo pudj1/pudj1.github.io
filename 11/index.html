@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" >
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+</head>
+<body>
+<div class="main">
+    <div class="word">
+        word
+    </div>
+    <div class="currentWord">
+        <div class="leftArrow">
+            <button class="i"  onclick="left()">
+                <img class="i" src="images/arrow_back.png" alt="">
+            </button>
+        </div>
+        <div class="numOfWord">
+            1/10
+        </div>
+        <div class="rightArrow">
+            <button class="i"  onclick="right()">
+                <img class="i" src="images/arrow_forward.png" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="input">
+        <input class="in" id="input" type="text">
+    </div>
+    <div class="statButton">
+            <button class="text" onclick="func()">Статистика</button>
+    </div>
+    <div class="stat">
+        <div class="correct">
+            <div class="text1 green">
+                Вірно
+            </div>
+            <div class="text2 green">
+                0
+            </div>
+        </div>
+        <div class="uncorrect">
+            <div class="text1 red">
+                Невірно
+            </div>
+            <div class="text2 red">
+                0
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-fade">
+	<div class="popup">
+		<a class="popup-close" href="#">Закрити</a>
+		<p class="a">Перевір свої знання англійської мови</p>
+	</div>		
+</div>
+<script src="source/source.js"> </script>
+</body>
+</html>
