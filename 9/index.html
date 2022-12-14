@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" >
+</head>
+<body onload="selectName()">
+    <div class="main">
+        <div class="left">
+            <div class="name" >
+                Player
+            </div>
+            <div class="score" id="score1">
+                0
+            </div>
+            <div class="roll" id="roll1">
+                <img id="roll1Image" src="images/default.jpg" alt="">
+            </div>
+        </div>
+        <div class="center">
+            <div class="currentTry">
+                Спроба 0 з 3
+            </div>
+            <div class="genButton">
+                <input id="genButton" type="button" onclick="func()" value="Generate">
+            </div>
+        </div>
+        <div class="right">
+            <div class="name">
+                Computer
+            </div>
+            <div class="score" id="score2">
+                0
+            </div>
+            <div class="roll" id="roll2">
+                <img id="roll2Image" src="images/default.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="source/source.js"> </script>
+</html>
