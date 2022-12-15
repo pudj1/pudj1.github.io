@@ -65,7 +65,7 @@ function func(){
       }
     }
   }
-  setTimeout(checkForWin, 0);
+  setTimeout(checkForWin, 100);
 }
 function scoreValue(roll){
   if(roll<5)return roll+6; 
