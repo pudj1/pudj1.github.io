@@ -72,7 +72,6 @@ function right() {
 
   function checkAnswer(){
     if(input.value==''||input.value==undefined){
-      console.log(123);
       return;
     }
     correct = 0;
