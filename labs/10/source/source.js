@@ -19,11 +19,17 @@ function func(){
   var roll;
   currentMove++;
   move.innerHTML = 'Спроба ' + currentMove + ' з 3';
+  do{
   for(var i=0;i<9;i++){
     roll = Math.round(Math.random()*4+1);
     icons[i] = roll;
     document.getElementById('icon'+i).setAttribute('src','images/'+pictures[roll])
   }
+  } while(icons[0]==icons[1]||icons[0]==icons[2]||
+          icons[1]==icons[2]||icons[3]==icons[4]||
+          icons[3]==icons[5]||icons[4]==icons[5]||
+          icons[6]==icons[7]||icons[6]==icons[8]||
+          icons[7]==icons[8])
   function checkForWin(){
     
       if(icons[0]==icons[3]&&icons[0]==icons[6]||

@@ -17,8 +17,8 @@ body{
     display: flex;
     width:60%;
     height: 100%;
-    border-left:#a8a8aa solid 1px ;
-    border-right:#a8a8aa solid 1px ;
+    border-left:#a8a8aa solid 0.1px ;
+    border-right:#a8a8aa solid 0.1px ;
     padding: 2%;
 }
 .labs{
@@ -32,7 +32,7 @@ body{
     height:25%;
     display: flex;
     flex-direction: row;
-    border: #a8a8aa solid 1px;
+    border: #a8a8aa solid 0.1px;
 }
 .b{
     margin-bottom: 1%;
@@ -44,14 +44,15 @@ body{
     height: 100%;
 }
 .name{
+    display: contents;
     box-sizing:border-box;
-    padding-top: 1%;
+    padding-top: 0.1vh;
     height: 25%;
     width: 100%;
     text-align: center;
 }
 .name a{
-    font-size: 100%;
+    font-size: 2.5vh;
     background-color: #202124;
     border:0;
     font-family: 'PT Serif', serif;
@@ -62,14 +63,31 @@ body{
 .name a:hover{
     color: #5599ff;
     text-decoration: underline;
-    cursor:pointer;
-
+}
+.name a:active{
+    color: #7fb0fa;
 }
 .text{
+    color: #d4d4d4;
+    font-size: 1.8vw;
+    box-sizing:border-box;
+    padding-left:1% ;
     height: 75%;
     width: 100%;
 }
 .photo{
+    display: flex;
     width: 30%;
     height: 100%;
+}
+.photo a{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+img{
+    border:0;
+    height: 100%;
+    width: 100%;
 }
