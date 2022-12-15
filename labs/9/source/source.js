@@ -22,27 +22,6 @@ function selectName(){
   } while(name1.innerHTML === '')
 }
 function func(){
-  var rolled2;
-  var rolled1;
-  currentMove++;
-  move.innerHTML = 'Спроба ' + currentMove + ' з 3';
-  do{
-  rolled1 = Math.round(Math.random()*8);
-  var rolled11 = Math.round(Math.random()*3+1);
-  rolled2 = Math.round(Math.random()*8);
-  var rolled22 = Math.round(Math.random()*3+1);
-  } while(rolled1==rolled2&&rolled11==rolled22)
-  roll1.setAttribute('src','images/' + cards[rolled1] + '_' + rolled11 + '.png');
-  roll2.setAttribute('src','images/' + cards[rolled2] +'_' + rolled22 + '.png');
-  if(currentMove == 1){
-    score1.innerHTML = scoreValue(rolled1);
-    score2.innerHTML = scoreValue(rolled2);
-  }else{
-    score1.innerHTML = parseInt(score1.innerHTML)+ scoreValue(rolled1);
-    score2.innerHTML = parseInt(score2.innerHTML)+ scoreValue(rolled2);
-  }
-  roll1.setAttribute('src','images/' + cards[rolled1] + '_' + rolled11 + '.png');
-  roll2.setAttribute('src','images/' + cards[rolled2] +'_' + rolled22 + '.png');
   function checkForWin(){
     if (currentMove == 3){
       if(score1.innerHTML>score2.innerHTML){
@@ -65,7 +44,11 @@ function func(){
       }
     }
   }
-  setTimeout(checkForWin, 99);
+  setTimeout(checkForWin, 300);
+  var rolled2;
+  var rolled1;
+  currentMove++;
+  move.innerHTML = 'Спроба ' + currentMove + ' з 3';
 }
 function scoreValue(roll){
   if(roll<5)return roll+6; 
