@@ -44,7 +44,7 @@ function func(){
       }
     }
   }
-  setTimeout(checkForWin, 10);
+  setTimeout(checkForWin, 200);
   var rolled2;
   var rolled1;
   currentMove++;

@@ -107,7 +107,7 @@ function right() {
     });	
   });
   function func(){
-    var string = 'Ти відповів правильно на ' + correctText.innerHTML + 'з 10 питань це ';
+    var string = 'Ти відповів правильно на ' + correctText.innerHTML + ' з 10 питань це ';
     if(correctText.innerHTML > 8) 
       string += "високий рівень. Молодец!"
     else if(correctText.innerHTML > 5)
