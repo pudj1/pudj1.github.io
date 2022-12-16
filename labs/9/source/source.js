@@ -23,7 +23,7 @@ function selectName(){
 }
 function func(){
   function checkForWin(){
-    if (currentMove == 3){
+    if (currentMove >= 3){
       if(score1.innerHTML>score2.innerHTML){
         alert('Переміг гравец!');
         roll1.setAttribute('src','images/default.jpg');
